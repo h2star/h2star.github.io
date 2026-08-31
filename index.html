@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xiaoli — Personal Assistant</title>
+<style>
+  body { font-family: -apple-system, "Helvetica Neue", "PingFang TC", sans-serif;
+         max-width: 42rem; margin: 3rem auto; padding: 0 1.25rem; line-height: 1.75;
+         color: #222; background: #fff; }
+  h1 { margin-bottom: .25rem; }
+  .sub { color: #666; margin-top: 0; }
+  h2 { margin-top: 2rem; font-size: 1.15rem; }
+  ul { padding-left: 1.25rem; }
+  footer { margin-top: 3rem; border-top: 1px solid #e5e5e5; padding-top: 1rem;
+           font-size: .9rem; color: #666; }
+  a { color: #0b57d0; }
+</style>
+</head>
+<body>
+<h1>Xiaoli（小麗）</h1>
+<p class="sub">A private, single-user personal assistant.</p>
+
+<h2>What this application does</h2>
+<p>
+  Xiaoli is a personal assistant that runs privately on its owner's own Mac and is
+  reachable through a private Telegram bot. It is used by one person — its owner —
+  and is not offered to the public, distributed, or sold.
+</p>
+
+<h2>How it uses Google APIs</h2>
+<p>Xiaoli uses the Google Calendar API for exactly two purposes:</p>
+<ul>
+  <li><strong>Reading the owner's calendar</strong> so it can answer questions such as
+      "what's on my schedule tomorrow?"</li>
+  <li><strong>Creating and updating the owner's calendar events</strong> when the owner
+      asks it to add or change an appointment.</li>
+</ul>
+<p>
+  It requests only two OAuth scopes: <code>calendar.events</code> and
+  <code>calendar.calendarlist.readonly</code>. It does not request access to Gmail,
+  Google Drive, Contacts, or any other Google service.
+</p>
+
+<h2>Where the data goes</h2>
+<p>
+  Nowhere. Calendar data is used to answer the owner's own questions and is never
+  transmitted to any third party, published, sold, or used for advertising or analytics.
+  There are no other users, so there is no sharing between users.
+</p>
+
+<h2>Privacy</h2>
+<p>See the <a href="privacy.html">Privacy Policy</a>.</p>
+
+<footer>
+  Xiaoli is a personal, non-commercial project. Contact:
+  <a href="mailto:h2star@gmail.com">h2star@gmail.com</a>
+</footer>
+</body>
+</html>
